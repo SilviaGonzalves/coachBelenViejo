@@ -130,10 +130,10 @@
     font-size: 2rem;
     margin-left: 20px;
 }
-/* .Parrafo1__titulo:hover{    
+.Parrafo1__titulo:hover{    
     transform: scaleX(2) translateX(100px);
     
-} */
+}
 .Parrafo1__p{ 
     margin: auto;
     margin-top: 20px;
@@ -166,9 +166,9 @@
     font-size: 2rem;
     margin-left: 20px;
 }
-/* .Parrafo2__titulo:hover{    
+.Parrafo2__titulo:hover{    
     transform: scaleX(2) translateX(100px);
-} */
+}
 .Parrafo2__p{ 
     margin: auto;
     margin-top: 20px;
