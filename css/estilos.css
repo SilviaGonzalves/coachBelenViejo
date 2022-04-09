@@ -94,12 +94,12 @@
     height: 370px;
     border: #000 0.2rem solid;
     position: relative;
-    /* transition: all 2s; */
+    transition: all 2s;
 }
 
-/* .iframe img:hover{
+.iframe img:hover{
     transform: scale(1.1);
-} */
+}
 
 .vacio{ 
     height: 370px;
@@ -534,12 +534,12 @@
     height: 400px;
     border: #000 0.2rem solid;
     position: relative;
-    /* transition: all 2s; */
+    transition: all 2s;
 }
 
-/* .pa-em-qs__iframe img:hover{    
+.pa-em-qs__iframe img:hover{    
     transform: scale(1.1);
-} */
+}
 
 .pa-em-qs__global{    
     grid-area: pa-em-qs__global;
