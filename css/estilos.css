@@ -4,27 +4,12 @@
     padding: 0;
 }
 /* desktop hata 1200px*/
-.contenedorGeneral{ 
-    width: 100%;
-    max-width: 1000px;
+.container{ 
     margin: 20px auto;
     font-family: 'Dancing Script', cursive; 
     font-size:62.5%;
     position: relative;
-    height: 1500px;
-
-    /* con grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-    "header     header      header"
-    "iframe     iframe      iframe"
-    "Parrafo1   Parrafo1    Parrafo1"
-    "Parrafo2   Parrafo2    Parrafo2"
-    "encuesta   encuesta    encuesta"
-    "footer     footer      footer"
-    ;
+    height: 122rem;
 }
 .fotoFondo{
     width: 100%;
@@ -35,9 +20,7 @@
 
 }
 .header{ 
-    grid-area: header;
-    height:100px;
-    padding: 3%;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,16 +28,10 @@
     position: relative;
     flex-wrap: wrap;
 }
-.logo{  
-    width: 120px;
-    height: 120px;
-    line-height: 100px;
+.logo_img{  
+    width: 12rem;
+    height: 12rem;
 }
-.logo .logo_img{ 
-    width: 100%;
-}
-
-
 .header__menu ul{   
     display: flex;
     flex-direction: row;
@@ -83,16 +60,16 @@
     background-color: rgb(243, 166, 224);
 }
 .iframe{    
-    grid-area: iframe;
+    /* grid-area: iframe; */
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 30px;
 }
 .iframe img{    
-    width: 370px;
-    height: 370px;
-    border: #000 0.2rem solid;
+    width: 30rem;
+    height: 30rem;
+    border:  #000 0.1rem solid ;
     position: relative;
     transition: all 2s;
 }
@@ -111,7 +88,7 @@
     position: relative;
 }
 .Parrafo1{   
-    grid-area: Parrafo1;
+    /* grid-area: Parrafo1; */
     position: relative;
     display: flex;
     flex-direction: row;
@@ -130,10 +107,7 @@
     font-size: 2rem;
     margin-left: 20px;
 }
-.Parrafo1__titulo:hover{    
-    transform: scaleX(2) translateX(100px);
-    
-}
+
 .Parrafo1__p{ 
     margin: auto;
     margin-top: 20px;
@@ -142,13 +116,13 @@
     width: 100%;
     line-height: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 300px;
+    /* height: 300px; */
+    height: 30rem;
     margin: auto;
     text-align: justify;
     background-color: rgb(246, 244, 241, 0.6);
 }
 .Parrafo2{  
-    grid-area: Parrafo2; 
     position: relative;
     display: flex;
     flex-direction: row;
@@ -166,9 +140,7 @@
     font-size: 2rem;
     margin-left: 20px;
 }
-.Parrafo2__titulo:hover{    
-    transform: scaleX(2) translateX(100px);
-}
+
 .Parrafo2__p{ 
     margin: auto;
     margin-top: 20px;
@@ -178,51 +150,33 @@
     width: 100%;
     line-height: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 180px;
+    /* height: 180px; */
+    height: 20rem;
     margin: auto;
     text-align: justify;
     background-color: rgb(246, 244, 241, 0.6);
 }
-.encuesta{
-    grid-area: encuesta;
-    height: 80px;
-    position: relative;
+.encuesta{   
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    line-height: 90px;
-} 
+    align-items: center;
+}
 .encuesta__titulo{  
     width: 60%;
-    height: 80px;
-    font-size: 2rem;
-    margin-left: 20px;
+    line-height: 150px;
+    font-size: 2.5rem;
+    display: inline;
 }
-/* @keyframes anima{   
-    0%{ 
-        opacity: 0;
-    }
-    100%{   
-        opacity: 1;
-    }
-}
-.encuesta__titulo{  
-    animation-duration: 3s;
-    animation-name: anima;
-    animation-iteration-count: infinite;
-} */
+
 .encuesta a{   
-    margin-right: 300px;
+    margin-top: 10px ;
     background-color: aquamarine;
     color: black; 
-    display: block;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 230px;
     text-decoration: none;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     position: relative;
     height: 40px;
     border-color:rgb(243, 166, 224);
@@ -230,8 +184,7 @@
 }
 
 .footer{   
-    grid-area: footer;
-    height: 130px;
+    height: 150px;
     position: relative;
     background-color: rgb(246, 244, 241, 0.6);
     display: flex;
@@ -240,7 +193,7 @@
     align-items: center;
 }
 .footer__p{ 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: black;
     line-height: 30px;
     text-align: left;
@@ -252,7 +205,7 @@
     color: black;
     line-height: 30px;
     text-align: center;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     background-color: aquamarine;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -302,53 +255,26 @@
     font-style: italic; 
 }
 /* ----------------página de encuesta------------- */
-.en__contenedorGeneral{ 
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    font-family: 'Dancing Script', cursive; 
-    font-size:62.5%;
-    position: relative;
-    height: 1500px;
 
-    /* con grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 40px 40px 1150px 100px;
-    grid-template-areas: 
-    "header         header          header"
-    "en__titGral1   en__titGral1    en__titGral1"
-    "en__titGral2   en__titGral2    en__titGral2"
-    "en__cuerpo     en__cuerpo      en__cuerpo"
-    "footer         footer          footer"
-    ;
-}
 .en__titGral1{ 
-    grid-area: en__titGral1;   
-    display: inline-block;
-    margin-left: 140px;
-    margin-top: 20px;
-    font-size: 2.5rem;
-    font-style: italic; 
-    font-weight: bold;
-   
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.en__titGral2{ 
-    grid-area: en__titGral2; 
     display: inline-block;  
     margin-left:100px;
     margin-top: 40px;
     font-size: 2.5rem;
     font-style: italic; 
     font-weight: bold;
-  
+}
+.en__titGral2{ 
+    display: inline-block;  
+    margin-left:150px;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-style: italic; 
+    font-weight: bold;
 }
 .en__cuerpo{ 
-    grid-area: en__cuerpo;
     width: 100%;
-    height: 900px;
+    height: 1300px;
     margin-top: 60px;
     position: relative;
     display: flex;
@@ -358,7 +284,7 @@
 
 .en__tituloLabel{
     font-style: normal;    
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
     margin-top:15px;
@@ -366,11 +292,13 @@
 }
 
 .radio{    
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
     margin-left: 20px;
 }
+
+input[type=radio] { border: 0px; width: 2%; height: 1em; }
 
 .en__vacio{ 
     height: 50px;
@@ -378,18 +306,23 @@
 .en__vacio1{ 
     height: 25px;
 }
-.en__submit{    
-    width: 200px;
+
+.agrandarTamaño{    
+    font-size: 2rem;
+}
+
+.en__submit{   
+    width: 300px;
     text-align: center;
     display: inline-block;
 }   
 .en__boton{ 
     color: black;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 0px;
-    width: 180px;
+    width: 450px;
     text-decoration: none;
     text-align: center;
     background-color: aquamarine;
@@ -399,43 +332,24 @@
  
 
 /* -------------página biblioteca------------- */
-.bl__contenedorGeneral{ 
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    font-family: 'Dancing Script', cursive; 
-    font-size:62.5%;
-    position: relative;
-    height: 1500px;
-    
-    /* con grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 50px 1180px 100px;
-    grid-template-areas: 
-    "header         header          header"
-    "bl__titGral    bl__titGral     bl__titGral" 
-    "bl__global     bl__global      bl__global" 
-    "footer         footer          footer"
-    ;
-}
-.bl__titGral{  
-    grid-area: bl__titGral; 
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: black;
+
+.bl__titGral{   
+    margin-left: 250px;
+    margin-top: 20px;
     margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-style: italic; 
+    color: black;
     position: relative;
 }
+
 .bl__global{   
-    grid-area: bl__global; 
     width: 90%;
-    height: 1100px;
+    height: 1400px;
     overflow: scroll;
     position: relative;
     padding: 0px 30px;
+    margin-bottom: 60px;
 }
 .bl__tituloLibro{  
     width: 100%;
@@ -447,7 +361,7 @@
 .bl__tituloAutor{    
     width: 100%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     margin: auto;
 }
@@ -465,14 +379,14 @@
     line-height: 30px;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;  
+    font-size: 1.5rem;  
 }
 .bl__linkLibro{ 
     background-color: aquamarine;
     border-color:rgb(243, 166, 224);
     border-style: solid;
     color: white;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     padding: 10px 0px;
     width: 100px;
     text-decoration: none;
@@ -487,30 +401,9 @@
 .bl__vacio{ 
     height: 60px;
 }
-/* -----------------------página Particulares------------ */
-.pa-em-qs__contenedorGeneral{ 
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    font-family: 'Dancing Script', cursive; 
-    font-size:62.5%;
-    position: relative;
-    height: 1400px;
-    
-    /* con grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 40px 380px 600px 150px;
-    grid-template-areas: 
-    "header                header             header"
-    "pa-em-qs__titGral     pa-em-qs__titGral  pa-em-qs__titGral" 
-    "pa-em-qs__iframe      pa-em-qs__iframe   pa-em-qs__iframe"
-    "pa-em-qs__global      pa-em-qs__global   pa-em-qs__global" 
-    "footer                footer             footer"
-    ;
-}
+/* -----------------------página Particulares-Empreas-Quien soy------------ */
+
 .pa-em-qs__titGral{   
-    grid-area: pa-em-qs__titGral;
     display: inline-block;
     margin-left: 180px;
     margin-top: 20px;
@@ -520,7 +413,6 @@
   
 }
 .pa-em-qs__iframe{ 
-    grid-area: pa-em-qs__iframe;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -530,8 +422,8 @@
 
 
 .pa-em-qs__iframe img{    
-    width: 300px;
-    height: 400px;
+    width: 30rem;
+    height: 40rem;
     border: #000 0.2rem solid;
     position: relative;
     transition: all 2s;
@@ -542,73 +434,48 @@
 }
 
 .pa-em-qs__global{    
-    grid-area: pa-em-qs__global;
     width: 100%;
-    height: 600px;
+    height: 800px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 30px;
 }
-
-
-
 
 
 .pa-em-qs__mensaje{ 
     margin: auto;
-    /* margin-top: 120px; */
     padding: 10px 30px;
-    font-size: 1rem;  /* esto equivale a 15px */
+    font-size: 1.4rem;  /* esto equivale a 15px */
     width: 100%;
-    line-height: 25px;
+    line-height: 35px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 300px;
+    height: 500px;
     text-align: justify;
     background-color: rgb(246, 244, 241, 0.6);
 }
 
 
 .pa-em-qs__turnos{
-    /* width:70% ;
-    text-align: center; */
     width: 100%;
     text-align: left;
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: italic; 
     position: relative;
-    /* margin-top: 100px; */
     margin-left: 30px;
+    height: 300px;
+    display: flex;
+    align-items: center;
 }
 
 /*------------------ pagina de contacto-------------- */
 
- .co__contenedorGeneral{ 
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    font-family: 'Dancing Script', cursive; 
-    font-size:62.5%;
-    position: relative;
-    height: 1500px;
-    
-    /* con grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas: 
-    "header     header      header"
-    "co__global co__global  co__global" 
-    "footer     footer      footer"
-    ;
-}
- 
 .co__global{   
-    grid-area: co__global; 
     width: 100%;
-    height: 1080px;
+    height: 1600px;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -616,7 +483,7 @@
 }
 .co__tituloLabel{
     font-style: normal;    
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
     display: block;
@@ -625,11 +492,13 @@
 .co__caja{ 
     width: 300px;
     line-height: 50px;
-    
+    border: 1px;
+    background-color:rgb(203, 247, 232) ;
 }
 .co__caja1{ 
     width: 470px;
     height: 200px;
+    background-color:rgb(203, 247, 232) ;
 }
 .co__botones{   
     flex-direction: row;
@@ -644,12 +513,17 @@
     width: 120px;
     text-decoration: none;
     text-align: center;
-    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aquamarine;
     border-color:rgb(243, 166, 224);
     border-style: solid;
 }  
+
+input[type=text] { border: 1px; font-size: 1.2rem; }
+
+textarea { border: 1px; font-size: 1.2rem; }
+
+
 .co__submit{    
  
     height: 50px;
@@ -669,74 +543,34 @@
     margin-top: 50px;
   
 } 
+/*------------------------------------ prueba de adapacion de las fotos del index ----------------------------*/
+@media screen and (min-width:781px) and (max-width:991px) {
 
-
-
+    .iframe img{    
+        width: 20rem;
+        height: 20rem;
+     }
+    .header__menu ul li a{ 
+         font-size: 1.2rem;
+     }
+}
 /*-------------------------------------- adaptación para tablet------------------------ */
-@media screen and (max-width:780px) {
-    .contenedorGeneral{ 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-         "header     header"
-         "iframe     iframe"
-         "Parrafo1   Parrafo1"
-         "Parrafo2   Parrafo2"
-         "encuesta   encuesta"
-         "footer     footer"
-         ;
+@media screen and (min-width:500px) and (max-width:780px) {
+    .container{ 
+        height: 110rem;
     }
-    .co__contenedorGeneral{ 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 250px 1120px 100px;
-        grid-template-areas: 
-        "header     header"
-        "co__global co__global"
-        "footer     footer"
-        ;
-    }
-    .bl__contenedorGeneral{ 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 50px 1210px 100px;
-        grid-template-areas: 
-        "header         header"
-        "bl__titGral    bl__titGral"
-        "bl__global     bl__global"
-        "footer         footer"
-        ;
-    }
-    .en__contenedorGeneral{ 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px 40px 40px 1150px 100px;
-        grid-template-areas: 
-        "header         header"
-        "en__titGral1   en__titGral1"
-        "en__titGral2   en__titGral2"
-        "en__cuerpo     en__cuerpo"
-        "footer         footer"
-        ;
-    }
-    .pa-em-qs__contenedorGeneral{   
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 40px 430px 600px 100px;
-        grid-template-areas: 
-        "header             header"
-        "pa-em-qs__titGral     pa-em-qs__titGral" 
-        "pa-em-qs__iframe      pa-em-qs__iframe"
-        "pa-em-qs__global      pa-em-qs__global" 
-        "footer             footer"
-        ;
-    }
-    .logo{   
-     width: 100px;
-     height: 100px;
-    } 
-  
+
+    
     .header{ 
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
     }
+    .logo_img{   
+        width: 10rem;
+        height: 10rem;
+       } 
+     
     .header__menu{   
      height: 60px;
      align-items: flex-start;
@@ -753,27 +587,26 @@
      
     }
 
-    .iframe{ 
-     margin-top: 20px;
-     }
-     
     .iframe img{    
-        width: 300px;
-        height: 300px;
+        width: 15rem;
+        height: 15rem;
      }
 
     .Parrafo1__p{ 
-     line-height: 20px;
+     line-height: 15px;
      height: 400px;   
     }
     .Parrafo2__p{    
-     line-height: 20px;
+     line-height: 15px;
     }
+  
     .encuesta__titulo{ 
-     width: 80%;
-     font-size: 1.6rem;
-    }
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 30px;
+     }
     .encuesta a{   
+     margin-top: 0px;
      font-size: 0.9rem;
      margin-right: 70px;    
     }
@@ -800,9 +633,13 @@
         width: 400px;
         height: 200px;
     }
-    .co__reset{   
-     margin-left: 220px;
+    .co__botones{  
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
+    
     .bl__global{ 
         height: 1200px;
         margin-right: 130px;
@@ -821,82 +658,55 @@
         font-size: 0.7rem;
     }
     
-  
  }
  
 
  /*------------------------------------- adaptación para celulares ---------------------*/
- @media screen and (max-width:500px) {
-     .contenedorGeneral{ 
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-         "header"
-         "iframe"
-         "Parrafo1"
-         "Parrafo2"
-         "encuesta"
-         "footer"
-         ;
-     }
-     .co__contenedorGeneral{ 
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 900px 100px;
-        grid-template-areas: 
-        "header"
-        "co__global"
-        "footer"
-        ;
-     }
-     .bl__contenedorGeneral{ 
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 50px 1250px 100px;
-        grid-template-areas: 
-        "header"
-        "bl__titGral"
-        "bl__global"
-        "footer"
-        ;
-     }
-     .en__contenedorGeneral{ 
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 40px 40px 900px 100px;
-        grid-template-areas: 
-        "header"
-        "en__titGral1"
-        "en__titGral2"
-        "en__cuerpo"
-        "footer"
-        ;
-     }
-     .pa-em-qs__contenedorGeneral{
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 40px 250px 500px 100px;
-        grid-template-areas: 
-        "header"
-        "pa-em-qs__titGral" 
-        "pa-em-qs__iframe"
-        "pa-em-qs__global" 
-        "footer"
-        ;
-     }
+ @media screen and (min-width:200px) and (max-width:500px) {
+   
+     container{    
+        margin: 10px auto;
+        height: 100rem;
+    }
+
      .fotoFondo{    
          display: none;
      }
+    
      .header{ 
-        display: flex;
-        flex-direction: row;
-        justify-content: normal;
-        flex-wrap: wrap;
-     }
-     .header__menu ul li a{  
-        font-size: 0.7rem;
-        padding: 8px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    }
+    .logo_img{   
+        width: 8rem;
+        height: 8rem;
+    } 
+    .header__menu{   
+     height: 60px;
+     /* align-items: flex-end; */
      
-     }
+    }
+    .header__menu ul{  
+     display: flex; 
+     flex-direction: row;
+     flex-wrap: wrap;
+     line-height: 2px;
+     
+    }
+    .header__menu ul li a{  
+     font-size: 0.7rem;
+     padding: 8px;
+     
+    }
      .iframe{    
          margin: auto;
-         margin-top: 20px;
+         /* margin-top: 20px; */
+         margin-top: 2rem;
+     }
+     .iframe img{   
+         width: 20rem;
+         height: 15rem;
      }
      .iframe img:hover { 
          transform: none;
@@ -913,9 +723,9 @@
         font-size: 1.5rem;
      }
      .Parrafo1__p{   
-         line-height: 20px;
+         line-height: 15px;
          padding: 0px 15px;
-         height: 400px;
+         height: 450px;
          font-size: 0.7rem;
      }
      .Parrafo2__header{  
@@ -926,25 +736,25 @@
          margin-top: 10px;
      }
      .Parrafo2__p{   
-         line-height: 20px;
+         line-height: 15px;
          padding: 0px 15px;
-         height: 200px;
+         height: 250px;
          font-size: 0.7rem;
      }
      .encuesta{   
-         flex-direction: column;
+         flex-direction: row;
          justify-content: center;
          margin: auto;
+         flex-wrap: wrap;
+         align-items: center;
      }
      .encuesta__titulo{  
          width: 100%;
          margin: auto;
+         font-size: 1.5rem;
+         line-height: 20px;
      }
-     .encuesta a{   
-         width: 100%;
-         margin: auto; 
-         margin-bottom: 30px; 
-     }
+ 
      .footer{   
          display: flex; 
          flex-direction: column;
@@ -970,8 +780,10 @@
          width: 100%;
          margin: auto;
      }
-    
-     .co__caja{ 
+    .co__global{    
+        height: 1000px;
+    }
+    .co__caja{ 
         width: 200px;
         line-height: 50px;
         
@@ -980,22 +792,37 @@
         width: 300px;
         height: 250px;
     }
+
     .co__submit{  
-         display: inline-block;
-         margin-left: 0px;
-     }
-    .co__reset{   
-         display: inline;
-         margin-left: 110px;
-        
-     } 
+            width: 80px;  
+            height: 50px;
+            color: black;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;      
+            margin-top: 30px;
+            margin-left: 0px;
+    } 
+    .co__reset{    
+            width: 80px;
+            height: 50px;
+            color: black;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;  
+            margin-top: 30px;
+            margin-left: 100px;
+    } 
+
     .en__titGral1{ 
         font-size: 1.5rem;
     }
     .en__titGral2{ 
         font-size: 1.5rem;
     }
-   
+    .agrandarTamaño{    
+        font-size: 1.6rem;
+    }
     .pa-em-qs__titGral{ 
         display: inline-block;
         font-size: 1.5rem;
@@ -1015,10 +842,7 @@
     .pa-em-qs__iframe img:hover{    
         transform: none;
     }
-    /* .pa-em-qs__vacio{  
-        width: 300px;
-        height: 300px;
-    } */
+
     .pa-em-qs__global{ 
         height: 400px;
         margin-top: 90px;
