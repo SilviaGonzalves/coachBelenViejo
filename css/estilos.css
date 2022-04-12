@@ -488,18 +488,56 @@ input[type=radio] { border: 0px; width: 2%; height: 1em; }
     color: black;
     display: block;
     line-height: 60px;
+    margin-left: 30px;
 }
 .co__caja{ 
     width: 300px;
     line-height: 50px;
     border: 1px;
     background-color:rgb(203, 247, 232) ;
+    margin-left: 30px;
+    padding-left: 20px;
 }
+
+
+.co__caja:hover{
+    background-image: linear-gradient(rgb(203, 247, 232), rgb(243, 184, 228));
+}
+.co__caja:focus{
+    box-shadow: 10px 5px 5px black;
+    transform: translate(50px,0);
+    transition: 2s;
+    transform: scaleX(1.1);
+    outline: none;
+    background-color: #dfe;
+    border: 0;
+    background-image: linear-gradient(rgb(203, 247, 232), rgb(243, 203, 233));
+}
+
 .co__caja1{ 
     width: 470px;
     height: 200px;
     background-color:rgb(203, 247, 232) ;
+    margin-left: 30px;
+    padding-left: 20px;
 }
+
+.co__caja1:hover{
+    background-image: linear-gradient(rgb(203, 247, 232), rgb(243, 184, 228));
+}
+.co__caja1:focus{
+    box-shadow: 10px 5px 5px black;
+    transform: translate(50px,0);
+    transition: 2s;
+    transform: scaleX(1.1);
+    outline: none;
+    background-color: #dfe;
+    border: 0;
+    background-image: linear-gradient(rgb(203, 247, 232), rgb(243, 203, 233));
+}
+
+
+
 .co__botones{   
     flex-direction: row;
     justify-content: space-around;
@@ -517,6 +555,7 @@ input[type=radio] { border: 0px; width: 2%; height: 1em; }
     background-color: aquamarine;
     border-color:rgb(243, 166, 224);
     border-style: solid;
+    margin-left: 30px;
 }  
 
 input[type=text] { border: 1px; font-size: 1.2rem; }
@@ -786,7 +825,6 @@ textarea { border: 1px; font-size: 1.2rem; }
     .co__caja{ 
         width: 200px;
         line-height: 50px;
-        
     }
     .co__caja1{ 
         width: 300px;
