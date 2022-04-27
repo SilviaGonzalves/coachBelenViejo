@@ -127,6 +127,7 @@
   margin: auto;
   margin-top: 20px;
   margin-bottom: 30px;
+  padding: 10px 30px;
   font-size: 1rem;
   line-height: 25px;
   font-family: Arial, Helvetica, sans-serif;
@@ -157,52 +158,6 @@
   line-height: 150px;
   font-size: 2.5rem;
   display: inline; }
-
-.footer {
-  height: 150px;
-  position: relative;
-  background-color: rgba(246, 244, 241, 0.6);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.footer__p {
-  font-size: 1.5rem;
-  color: black;
-  line-height: 30px;
-  text-align: left; }
-
-.footer__contacto, .pa__footer__contacto, .co__footer__contacto, .bl__footer__contacto, .em__footer__contacto {
-  display: inline-block;
-  width: 120px;
-  height: 50px;
-  color: black;
-  line-height: 30px;
-  text-align: center;
-  background-color: aquamarine;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  border-color: #f3a6e0;
-  border-style: solid; }
-  .footer__contacto a, .pa__footer__contacto a, .co__footer__contacto a, .bl__footer__contacto a, .em__footer__contacto a {
-    line-height: 50px;
-    text-decoration: none; }
-
-.footer__leyendas, .co__footer__leyendas {
-  display: inline-block;
-  width: 150px;
-  height: 30px;
-  margin-left: 180px;
-  margin-bottom: 20px; }
-  .footer__leyendas p, .co__footer__leyendas p {
-    text-align: center;
-    font-size: 1.4rem; }
-  .footer__leyendas iconos, .co__footer__leyendas iconos {
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    margin-top: 10px; }
 
 .icon-facebook, .icon-instagram, .icon-linkedin {
   display: inline-block;
@@ -273,7 +228,7 @@
   font-weight: bold;
   font-size: 1.6rem; }
 
-.qs__footer, .em__footer {
+.xx__footer {
   height: 150px;
   position: relative;
   background-color: rgba(246, 244, 241, 0.6);
@@ -282,13 +237,13 @@
   justify-content: space-between;
   align-items: center; }
 
-.qs__footer__p, .em__footer__p {
+.xx__footer__p {
   font-size: 1.5rem;
   color: black;
   line-height: 30px;
   text-align: left; }
 
-.qs__footer__contacto, .em__footer__contacto {
+.xx__footer__contacto {
   display: inline-block;
   width: 120px;
   height: 50px;
@@ -301,20 +256,20 @@
   font-family: Arial, Helvetica, sans-serif;
   border-color: #f3a6e0;
   border-style: solid; }
-  .qs__footer__contacto a, .em__footer__contacto a {
+  .xx__footer__contacto a {
     line-height: 50px;
     text-decoration: none; }
 
-.qs__footer__leyendas, .em__footer__leyendas {
+.xx__footer__leyendas {
   display: inline-block;
   width: 150px;
   height: 30px;
   margin-left: 180px;
   margin-bottom: 20px; }
-  .qs__footer__leyendas p, .em__footer__leyendas p {
+  .xx__footer__leyendas p {
     text-align: center;
     font-size: 1.4rem; }
-  .qs__footer__leyendas iconos, .em__footer__leyendas iconos {
+  .xx__footer__leyendas iconos {
     width: 150px;
     height: 50px;
     text-align: center;
@@ -492,7 +447,7 @@ input[type=radio] {
   margin-top: 40px; }
 
 .em__turnos {
-  margin-top: 80px; }
+  margin-top: 15px; }
 
 .em__vacio {
   height: 200px; }
@@ -605,12 +560,14 @@ textarea {
   .qs__turnos, .em__turnos {
     height: 100px;
     font-size: 2rem; }
-  .qs__footer__contacto, .em__footer__contacto {
+  .xx__footer__contacto {
     margin-left: 0px; }
   .pa__global {
     height: 52rem; }
   .em__global {
-    height: 45rem; } }
+    height: 45rem; }
+  .em__turnos {
+    margin-top: 72px; } }
 
 /*------------------------------------------------------ tamaño entre 768 y 780-------------------------------------- */
 @media screen and (min-width: 768px) and (max-width: 780px) {
@@ -643,7 +600,7 @@ textarea {
     height: 100px; }
   .qs__vacio, .em__vacio {
     height: 150px; }
-  .qs__footer__contacto, .em__footer__contacto {
+  .xx__footer__contacto {
     margin-left: 0px; } }
 
 /*-------------------------------------------------------tamaño entre 761 y 767------------------------------------------ */
@@ -664,6 +621,12 @@ textarea {
   .header__menu ul li a {
     font-size: 1rem;
     padding: 8px; }
+  .Parrafo1__p {
+    line-height: 17px;
+    height: 32rem; }
+  .Parrafo2__p {
+    line-height: 17px;
+    height: 16rem; }
   .pa__iframe img {
     width: 17rem;
     height: 17rem; }
@@ -674,13 +637,15 @@ textarea {
   .pa__turnos {
     margin-top: 50px;
     margin-left: 10px; }
+  .pa__vacio {
+    height: 385px; }
   .qs__global {
     height: 40rem; }
   .em__global {
     height: 42rem; }
   .qs__global p, .em__global p {
     font-size: 0.9rem; }
-  .qs__footer__contacto, .em__footer__contacto {
+  .xx__footer__contacto {
     margin-left: 0px; }
   .qs__turnos, .em__turnos, .em__turnos {
     height: 50px;
@@ -690,12 +655,20 @@ textarea {
   .qs__vacio {
     height: 110px; }
   .em__vacio {
-    height: 140px; } }
+    height: 140px; }
+  .encuesta {
+    height: 100px; }
+  .encuesta__titulo {
+    width: 55%;
+    font-size: 1.6rem;
+    line-height: 30px; }
+  .encuesta a {
+    margin-top: 0px;
+    font-size: 0.9rem;
+    width: 154px; } }
 
 /*------------------------------------------------------tamaño entre 500 y 760------------------------------------------- */
 @media screen and (min-width: 500px) and (max-width: 760px) {
-  .container {
-    height: 115rem; }
   .header {
     display: flex;
     flex-direction: row;
@@ -720,31 +693,20 @@ textarea {
     height: 500px; }
   .Parrafo2__p {
     line-height: 15px; }
+  .encuesta {
+    height: 235px; }
   .encuesta__titulo {
-    width: 100%;
+    width: 55%;
     font-size: 1.6rem;
     line-height: 30px; }
   .encuesta a {
     margin-top: 0px;
     font-size: 0.9rem;
-    margin-right: 70px; }
-  .footer__contacto {
-    margin-left: 70px;
-    height: 40px; }
-  .co__footer__contacto {
-    margin-left: 0px;
-    height: 40px; }
-  .bl__footer__contacto {
-    margin-left: 0px;
-    height: 40px; }
-  .pa__footer__contacto {
-    margin-left: 60px; }
-  .footer__p {
-    width: 150px; }
-  .footer__contacto a, .pa__footer__contacto a, .qs__footer__contacto a, .co__footer__contacto, .bl__footer__contacto, .em__footer__contacto {
+    margin-right: 70px;
+    width: 154px;
+    margin-right: 50px; }
+  .xx__footer__contacto a {
     line-height: 40px; }
-  .footer__leyendas {
-    margin-left: 20px; }
   .co__caja {
     width: 250px;
     line-height: 50px; }
@@ -756,10 +718,8 @@ textarea {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-  .co__footer__leyendas {
-    margin-left: 0px; }
   .bl__global {
-    height: 1200px;
+    height: 1375px;
     margin-right: 130px; }
   .libros .bl__tituloLibro {
     margin-right: 130px; }
@@ -771,7 +731,10 @@ textarea {
   .pa__global p {
     font-size: 0.7rem; }
   .pa__turnos {
-    margin-top: 40px; }
+    margin-top: 140px;
+    margin-left: 15px; }
+  .pa__vacio {
+    height: 250px; }
   .qs__iframe img, .em__iframe img {
     width: 300px;
     height: 400px; }
@@ -782,14 +745,14 @@ textarea {
     height: 140px;
     font-size: 1.6rem; }
   .qs__vacio {
-    height: 120px; }
+    height: 210px; }
   .em__global {
     height: 55rem;
     font-size: 1.2rem; }
   .em__vacio {
-    height: 130px; }
+    height: 200px; }
   .em__turnos {
-    margin-top: 0px;
+    margin-top: 100px;
     height: 100px;
     font-size: 1.6rem; } }
 
@@ -817,8 +780,13 @@ textarea {
   .Parrafo2__titulo {
     margin-top: 40px; }
   .encuesta__titulo {
-    height: 100px;
-    line-height: 50px; }
+    width: 55%;
+    font-size: 1.6rem;
+    line-height: 30px; }
+  .encuesta a {
+    margin-top: 0px;
+    font-size: 0.9rem;
+    width: 154px; }
   .qs__global, .em__global {
     height: 60rem;
     font-size: 1.2rem; }
@@ -827,11 +795,11 @@ textarea {
     font-size: 1.6rem; }
   .qs__vacio {
     height: 0px; }
-  .qs__footer, .em__footer {
+  .xx__footer {
     height: 250px; }
-  .qs__footer__p, .em__footer__p {
+  .xx__footer__p {
     height: 70px; }
-  .qs__footer__contacto, .em__footer__contacto {
+  .xx__footer__contacto {
     margin-right: 20px;
     height: 50px;
     color: black;
@@ -842,10 +810,10 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
     border-color: #f3a6e0;
     border-style: solid; }
-  .qs__footer__contacto a, .em__footer__contacto a {
+  .xx__footer__contacto a {
     line-height: 50px;
     text-decoration: none; }
-  .qs__footer__leyendas, .em__footer__leyendas {
+  .xx__footer__leyendas {
     margin-top: 10px;
     margin-left: 100px; }
   .pa__iframe img {
@@ -856,7 +824,8 @@ textarea {
   .pa__global p {
     font-size: 0.7rem; }
   .pa__turnos {
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-left: 15px; }
   .co__global {
     height: 1100px; }
   .fotoFondo {
@@ -887,20 +856,27 @@ textarea {
     font-size: 0.6rem; }
   .Parrafo2__titulo {
     margin-top: 40px; }
+  .encuesta {
+    margin-top: 30px; }
   .encuesta__titulo {
-    height: 100px;
-    line-height: 50px; }
+    width: 55%;
+    font-size: 1.6rem;
+    line-height: 30px; }
+  .encuesta a {
+    margin-top: 0px;
+    font-size: 0.9rem;
+    width: 154px; }
   .qs__global {
     height: 60rem;
     font-size: 1.2rem; }
   .qs__vacio {
-    height: 70px; }
+    height: 100px; }
   .qs__turnos, .em__turnos {
     height: 50px;
-    font-size: 1.5rem; }
-  .qs__footer__p, .em__footer {
+    font-size: 1.4rem; }
+  .xx__footer__p {
     margin-top: 50px; }
-  .qs__footer__contacto, .em__footer__contacto {
+  .xx__footer__contacto {
     margin-right: 20px;
     height: 50px;
     color: black;
@@ -912,10 +888,10 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
     border-color: #f3a6e0;
     border-style: solid; }
-  .qs__footer__contacto a, .em__footer__contacto a {
+  .xx__footer__contacto a {
     line-height: 50px;
     text-decoration: none; }
-  .qs__footer__leyendas, .em__footer__leyendas {
+  .xx__footer__leyendas {
     margin-top: 30px;
     margin-left: 100px; }
   .pa__iframe img {
@@ -946,8 +922,7 @@ textarea {
 /*-----------------------------------------------------tamaño entre 300 y 399 --------------------------------------*/
 @media screen and (min-width: 300px) and (max-width: 399px) {
   .container {
-    margin: 10px auto;
-    height: 100rem; }
+    margin: 10px auto; }
   .fotoFondo {
     display: none; }
   .header {
@@ -1010,23 +985,6 @@ textarea {
     margin: auto;
     font-size: 1.5rem;
     line-height: 20px; }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto; }
-  .footer__p {
-    width: 100%;
-    margin-top: 30px;
-    margin: auto; }
-  .footer__contacto, .pa__footer__contacto, .co__footer__contacto, .bl__footer__contacto {
-    width: 100%;
-    margin-top: 30px;
-    margin: auto; }
-  .footer__leyendas, .co__footer__leyendas {
-    width: 100%;
-    margin-top: 30px;
-    margin: auto; }
   .iconos {
     width: 100%;
     margin: auto;
@@ -1046,7 +1004,7 @@ textarea {
   .co__boton {
     width: 80px; }
   .co__reset {
-    margin-left: 120px; }
+    margin-left: 88px; }
   .agrandarTamaño {
     font-size: 1.6rem; }
   .qs__titGral, .en__titGral1, .en__titGral2 {
@@ -1099,12 +1057,13 @@ textarea {
     margin-left: 5px; }
   .qs__vacio {
     height: 0px; }
-  .qs__footer, .em__footer {
+  .xx__footer {
     height: 200px; }
-  .qs__footer__p, .em__footer__p {
+  .xx__footer__p {
+    width: 100%;
     height: 80px;
-    font-size: 1rem; }
-  .qs__footer__contacto, .em__footer__contacto {
+    font-size: 1.4rem; }
+  .xx__footer__contacto {
     height: 50px;
     color: black;
     line-height: 30px;
@@ -1115,14 +1074,14 @@ textarea {
     border-color: #f3a6e0;
     border-style: solid;
     margin: auto; }
-  .qs__footer__contacto a, .em__footer__leyendas a {
+  .xx__footer__contacto a {
     line-height: 50px;
     text-decoration: none; }
-  .qs__footer__leyendas, .em__footer__leyendas {
+  .xx__footer__leyendas {
     display: block;
     margin-top: 30px;
     margin-left: 100px; }
-    .qs__footer__leyendas .iconos, .em__footer__leyendas .iconos {
+    .xx__footer__leyendas .iconos {
       margin-left: 0px; }
   .bl__titGral {
     margin-left: 50px; }
@@ -1140,4 +1099,6 @@ textarea {
     font-size: 1.6rem;
     margin-left: 5px; }
   .em__vacio {
-    height: 0px; } }
+    height: 0px; }
+  .encuest {
+    height: 130px; } }
